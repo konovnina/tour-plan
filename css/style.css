@@ -1,0 +1,13 @@
+@font-face {
+	  font-family: Muli;
+	  src: url('fonts/Muli-Regular.woff');
+	  font-weight: normal;
+  	font-style: normal; 
+	}
+
+@font-face {
+	  font-family: Muli;
+	  src: url('fonts/Muli-Bold.woff');
+	  font-weight: bold;
+  	font-style: normal;
+	}
