@@ -25,6 +25,13 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 
 .stars
   flex-basis: 100%
@@ -94,3 +101,77 @@
     &--prev
       left: 18px
       background-image: url("../img/arrow-prev.svg")
+.booking
+  background-color: $dark
+  color: $light
+  width: 350px
+  min-height: 210px
+  border-radius: 8px
+  padding: 28px
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-size: 10px
+    font-weight: normal
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__room
+    margin-top: 4px
+  &__text
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+  &__description
+    margin-left: 9px
+  &__call-center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 17px
+  &__heading
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+    text-decoration: none
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__num
+    margin-left: 8px
+  &__button
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    width: 100%
+    min-height: 45px
+    border-radius: 4px
+    background-color: $primary
+    border: none
+    color: $light
+    cursor: pointer
+  &__map
+    width: 347px
+    height: 213px
+    border-radius: 10px
+    background-color: #000
+    overflow: hidden
