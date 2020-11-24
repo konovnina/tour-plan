@@ -683,7 +683,7 @@ template {
   width: 350px;
   min-height: 210px;
   border-radius: 8px;
-  padding: 28px;
+  padding: 29px 29px 26px 26px;
   font-family: Nunito, sans-serif;
 }
 
@@ -868,6 +868,7 @@ template {
   }
   .booking {
     width: 340px;
+    padding: 29px 22px 26px 23px;
   }
   .slider {
     width: 100%;
@@ -972,5 +973,18 @@ template {
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
+  }
+  .hotel {
+    padding-top: 0px;
+  }
+  .hotel-grid {
+    padding-top: 18px;
+  }
+  .slider {
+    height: 179px;
+  }
+  .booking {
+    padding-left: 21px;
+    padding-right: 21px;
   }
 }
