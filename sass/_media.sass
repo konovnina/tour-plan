@@ -1,11 +1,10 @@
 @media screen and ( max-width: 1200px )
   .container
     max-width: 960px
-  .slider
-    width: 590px
-  .swiper
-    &-slide
-      &__img
+  .hotel
+    &-slider
+      width: 590px
+      &__item
         width: 100%
         height: 100%
         object-fit: cover
@@ -35,14 +34,13 @@
     &-grid
       flex-direction: column
     &__slider
+      width: 100%
       margin-bottom: 30px
     &-right
       flex-direction: row
   .booking
     width: 340px
     padding: 29px 22px 26px 23px
-  .slider
-    width: 100%
   .map
     width: 340px
   .newsletter
@@ -86,10 +84,10 @@
         margin-top: 10px
     &-wrapper
       justify-content: space-between
+    &-slider
+      height: 350px
   .stars
     flex-basis: auto
-  .slider
-    height: 350px
   .hotel-right
     flex-direction: column
     min-height: 450px
@@ -110,11 +108,10 @@
 @media ( max-width: 576px )
   .logo
     width: 99px
-  .slider
-    height: 250px
   .hotel
     &__slider
       margin-bottom: 20px
+      height: 250px
   .subscribe
     width: 100%
 @media ( max-width: 320px )
@@ -125,8 +122,10 @@
     padding-bottom: 40px
     &-grid
       padding-top: 18px
-  .slider
-    height: 179px
+    &__slider
+      height: 179px
+  .stars
+    margin-right: 14px
   .booking
     padding-left: 21px
     padding-right: 21px
