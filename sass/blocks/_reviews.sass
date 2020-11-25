@@ -6,10 +6,12 @@
     line-height: 45px
     text-align: center
     text-transform: uppercase
+    margin: 0
     margin-bottom: 70px
   &-slider
     &__item
-      width: 730px
+      max-width: 730px
+      height: 280px
       background: #fff
       border-radius: 8px
       display: flex
@@ -38,7 +40,7 @@
         right: 60px
     &__button
       position: absolute
-      top: 50%
+      top: 45%
       transform: translateY(-50%)
       width: 30px
       height: 30px
@@ -52,10 +54,10 @@
       z-index: 99
       &--prev
         background-image: url(../img/arrow-left-secondary.svg)
-        left: 0
+        left: 20px
       &--next
         background-image: url(../img/arrow-right-secondary.svg)
-        right: 0
+        right: 20px
     &__profile
       display: flex
       flex-direction: column
@@ -88,6 +90,8 @@
         margin-right: 2px
     &__text
       max-width: 537px
+      overflow: hidden
+      text-overflow: ellipsis
       text-align: justify
       font-weight: normal
       font-size: 12px

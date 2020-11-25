@@ -938,11 +938,13 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 70px;
 }
 
 .reviews-slider__item {
-  width: 730px;
+  max-width: 730px;
+  height: 280px;
   background: #fff;
   border-radius: 8px;
   display: -webkit-box;
@@ -984,7 +986,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1002,12 +1004,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-left-secondary.svg);
-  left: 0;
+  left: 20px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-right-secondary.svg);
-  right: 0;
+  right: 20px;
 }
 
 .reviews-slider__profile {
@@ -1061,6 +1063,8 @@ template {
 
 .reviews-slider__text {
   max-width: 537px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   text-align: justify;
   font-weight: normal;
   font-size: 12px;
@@ -1139,6 +1143,22 @@ template {
   }
   .newsletter {
     padding: 92px 0 93px 0;
+  }
+  .reviews__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+    height: 344px;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
   }
 }
 
@@ -1238,6 +1258,32 @@ template {
     max-width: 576px;
     width: 92%;
   }
+  .reviews__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .reviews-slider__item {
+    padding: 0 29px 36px 33px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 31px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -65px;
+    left: 40%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    margin-right: -65px;
+    right: 40%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1250,6 +1296,9 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews-slider__item {
+    min-height: 438px;
   }
 }
 
@@ -1293,5 +1342,13 @@ template {
   }
   .map {
     height: 173px;
+  }
+  .reviews__title {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 42px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
   }
 }
