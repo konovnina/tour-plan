@@ -1267,6 +1267,9 @@ template {
   .hotel__slider {
     height: 179px;
   }
+  .hotel-right {
+    min-height: 403px;
+  }
   .stars {
     margin-right: 14px;
   }
@@ -1287,5 +1290,8 @@ template {
   }
   .subscribe__input {
     padding-left: 20px;
+  }
+  .map {
+    height: 173px;
   }
 }
