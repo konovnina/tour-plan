@@ -1546,8 +1546,8 @@ template {
     width: 100%;
   }
   .packages-wrapper {
-    -ms-grid-rows: minmax(500px, 600px) (500px)[2];
-        grid-template-rows: minmax(500px, 600px) repeat(2, 500px);
+    -ms-grid-rows: 550px (500px)[2];
+        grid-template-rows: 550px repeat(2, 500px);
   }
   .packages-card__option:not(:last-child) {
     margin-bottom: 0;
@@ -1558,6 +1558,9 @@ template {
   }
   .packages-card__info--main {
     padding: 30px 21px 25px 32px;
+  }
+  .packages-card__price {
+    margin-bottom: 10px;
   }
   .newsletter {
     padding-top: 76px;
@@ -1645,6 +1648,9 @@ template {
   }
   .packages-card__main-header {
     margin: 0;
+  }
+  .packages-card__price {
+    margin-bottom: 20px;
   }
   .subscribe {
     width: 100%;

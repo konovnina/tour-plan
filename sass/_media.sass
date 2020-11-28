@@ -130,6 +130,8 @@
   .map
     width: 100%
   .packages
+    &-wrapper
+      grid-template-rows: 550px repeat(2, 500px)
     &-card
       &__option
         &:not(:last-child)
@@ -139,6 +141,8 @@
       &__info
         &--main
           padding: 30px 21px 25px 32px
+      &__price
+        margin-bottom: 10px
   .newsletter
     padding-top: 76px
     padding-bottom: 83px
@@ -196,6 +200,8 @@
         display: none
       &__main-header
         margin: 0
+      &__price
+        margin-bottom: 20px
   .subscribe
     width: 100%
   .reviews
