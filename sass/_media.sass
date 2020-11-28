@@ -11,6 +11,12 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-wrapper
+      gap: 20px
+    &-card
+      &__text
+        margin-bottom: 20px
 @media ( max-width: 992px )
   .container, .newsletter-wrapper
     max-width: 700px
@@ -46,6 +52,9 @@
     padding: 29px 22px 26px 23px
   .map
     width: 340px
+  .packages
+    &-wrapper
+      grid-template: repeat(3, 500px) / repeat(2, 1fr)
   .newsletter
     padding: 92px 0 93px 0
   .reviews
@@ -97,7 +106,6 @@
   .hotel
     &-name
       flex-basis: 100%
-
     &-info
       &__rating
         display: none
@@ -121,6 +129,16 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &-card
+      &__option
+        &:not(:last-child)
+          margin-bottom: 0
+      &__button
+        flex-basis: 100%
+      &__info
+        &--main
+          padding: 30px 21px 25px 32px
   .newsletter
     padding-top: 76px
     padding-bottom: 83px
@@ -163,6 +181,21 @@
     &__slider
       margin-bottom: 20px
       height: 250px
+  .packages
+    &-wrapper
+      grid-template: repeat(5, 500px) / 1fr
+    &-card
+      &--main
+        grid-column: 1/-1
+        flex-direction: column
+      &__photo
+        flex-basis: 40%
+      &__info
+        flex-basis: 60%
+      &__text
+        display: none
+      &__main-header
+        margin: 0
   .subscribe
     width: 100%
   .reviews
