@@ -1941,6 +1941,7 @@ template {
     bottom: 0;
     top: 78px;
     padding-top: 31px;
+    overflow-y: scroll;
   }
   .navbar-bottom--visible {
     display: block;
