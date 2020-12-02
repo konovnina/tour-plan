@@ -1949,12 +1949,16 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 0;
   }
   .navbar-menu__item {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
   .navbar-menu__item--mobile_visible {
     display: block;
+  }
+  .navbar-menu__item--mobile_visible:first-child {
+    margin-bottom: 30px;
   }
   .menu-button {
     width: 16px;
