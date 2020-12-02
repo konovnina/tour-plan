@@ -17,9 +17,6 @@
     &-card
       &__text
         margin-bottom: 20px
-  .footer
-    &__input
-      flex-basis: 100%
 @media ( max-width: 992px )
   .container, .newsletter-wrapper
     max-width: 700px
@@ -85,59 +82,92 @@
     width: 340px
     height: 255px
   .footer
-    padding-top: 73px
+    padding: 70px 0 30px 0
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px
-    &__form
-      justify-content: space-between
-    &__input
-      flex-basis: 45%
-      margin-right: 28px
-    &__message
-      flex-basis: 95%
-    &__info
-      margin-right: 40px
+      grid-template-columns: minmax(min-content, 200px) minmax(min-content, 297px) minmax(min-content, 40px) minmax(min-content, 161px)
+      grid-template-rows: minmax(min-content, 110px) minmax(min-content, 200px) minmax(min-content, 255px) minmax(min-content, 312px) minmax(min-content, 22px)
+      grid-row-gap: 55px
+    &__title
+      &--social-tablet
+        margin-left: -15px
+      &--contact-indents
+        padding-top: 5px
+    &__ul
+      margin-bottom: 0
     &__logo
-      width: 104px
       grid-row: 1/2
-      grid-column: span 2
+      padding: 0
+      max-width: 96px
     &__social
       &-network
-        grid-row: 1 / 2
-        grid-column: span 4
-        align-self: center
-        margin-left: -60px
+        grid-column: 2/3
+        grid-row: 1/2
+        padding-top: 15px
+      &-links
+        margin-top: 5px
+        margin-right: 17px
     &__categories
+      grid-column: 1/2
       grid-row: 2/3
-      grid-column: span 2
-    &__legal
-      grid-column: span 2
-      &--pl-6
-        padding: 0
     &__additional
-      grid-column: span 2
-      margin-left: -50px
+      grid-column: 2/3
+      grid-row: 2/3
+    &__legal
+      grid-column: 3/5
+      grid-row: 2/3
     &__contact
       &-details
-        grid-column: span 5
-        grid-row: 3
+        grid-column: 1 / -1
+        grid-row: 3/4
       &-form
-        margin-bottom: 20px
-        grid-column: span 5
-        grid-row: 4
+        grid-column: 1/4
+        grid-row: 4/5
+    &__bottom
+      grid-column: 1/5
+      grid-row: 5/6
     &__additional-links
-      grid-column: 1/4
-      justify-content: flex-start
-    &__payments
-      grid-column: 4/7
+      margin: 0
+      padding: 0
 @media ( max-width: 767px )
+  body
+    padding-top: 78px
   .container
     max-width: 576px
     width: 92%
   .navbar
-    &__search, &-menu, &__user
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 31px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
   .menu
     &-button
       width: 16px
@@ -154,6 +184,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .hotel
     &-name
       flex-basis: 100%
@@ -226,15 +262,20 @@
           transform: translate(50%, 0)
   .activities
     padding-top: 40px
-    padding-bottom: 60px
+    padding-bottom: 40px
   .card
     width: 49%
-  .footer
-    &__input
-      flex-basis: 100%
+
 @media ( max-width: 576px )
   .logo
     width: 99px
+  .navbar
+    &__search
+      margin: auto
+      margin-bottom: 19px
+  .search
+    &__input
+      width: 245px
   .hotel
     &__slider
       margin-bottom: 20px
@@ -272,42 +313,74 @@
     width: 100%
   .footer
     &-wrapper
-      grid-template-columns: 1fr
+      grid-template-columns: 100%
+      grid-template-rows: minmax(min-content, 108px) minmax(min-content, 80px) minmax(min-content, 100px) minmax(min-content, 170px) minmax(min-content, 212px) minmax(min-content, 356px) minmax(min-content, 405px) minmax(min-content, 40px)
+      grid-row-gap: 30px
     &__logo
-      grid-row: 1
+      grid-row: 1 / 2
       grid-column: 1
+    &__title
+      &--social-tablet
+        flex-basis: 100%
+        margin: 0
+      &--contact-indents
+        padding-top: 12px
+      &--mb-3
+        margin-bottom: 15px
     &__social
       &-network
-        margin: 0
-        grid-row: 2
+        align-items: flex-start
+        align-content: space-between
+        flex-wrap: wrap
+        padding-top: 11px
+        grid-row: 2 /3
         grid-column: 1
+      &-links
+        flex-basis: 30%
+    &__legal
+      grid-row: 3 / 4
+      grid-column: 1
     &__additional
-      margin: 0
-      grid-row: 4
+      grid-row: 4 / 5
       grid-column: 1
     &__categories
-      grid-row: 5
-      grid-column: 1
-    &__legal
-      padding: 0
-      grid-row: 3
+      grid-row: 5 / 6
       grid-column: 1
     &__contact
       &-details
-        grid-row: 6
+        grid-row: 6 / 7
         grid-column: 1
       &-form
-        grid-row: 7
+        padding-top: 15px
+        grid-row: 7 / 8
         grid-column: 1
+    &__form
+      flex-direction: column
+      align-items: flex-start
+    &__message
+      width: 100%
+      flex-basis: auto
+      margin-bottom: 10px
+    &__info
+      padding-bottom: 20px
+    &__button
+      order: 1
+    &__input
+      width: 100%
+    &__text
+      margin-bottom: 20px
+    &__icon-wrapper
+      min-width: 25px
+    &__bottom
+      grid-row: 8 / 9
+      grid-column: 1
+      flex-direction: column
+      align-items: flex-start
     &__additional-links
-      grid-row: 8
-      grid-column: 1
-      justify-content: start
-    &__payments
-      grid-row: 9
-      grid-column: 1
-      text-align: left
-      margin-top: -40px
+      align-items: start
+      justify-content: space-between
+    &__additional-item:not(:last-child)
+      margin-right: 10px
 @media ( max-width: 320px )
   .container
     max-width: 280px

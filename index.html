@@ -17,21 +17,21 @@
 </head>
 
 <body>
-  <div class="navbar">
+  <div class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: Search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="avatar user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -48,6 +48,21 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <a href="#" class="user navbar__user navbar__user--mobile_visible">
+              <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="avatar user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: Search">
+              </button>
+            </form>
+          </li>
+
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -644,7 +659,7 @@
         <!-- /.footer__list -->
 
         <div class="footer__social-network">
-          <h3 class="footer__title footer__title--inline">Social Network</h3>
+          <h3 class="footer__title footer__title--social-tablet">Social Network</h3>
           <div class="footer__social-links">
             <a href="#" class="footer__link">
               <img src="img/fb.svg" alt="Icon: Facebook">
@@ -660,7 +675,7 @@
         </div>
         <!-- /.footer__social-network -->
 
-        <div class="footer__list footer__legal footer__legal--pl-6">
+        <div class="footer__list footer__legal">
           <h3 class="footer__title">LEGAL INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
@@ -671,17 +686,17 @@
         </div>
         <!-- /.footer__list -->
 
-        <div class="footer__contact-details footer__contact-details--pt-1">
-          <h3 class="footer__title footer__title--mb-2">Contact Details</h3>
+        <div class="footer__contact-details">
+          <h3 class="footer__title footer__title--contact-indents">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
-            <li class="footer__item footer__item--mb-2">
+            <li class="footer__item footer__item--contact-indents">
               <div class="footer__icon-wrapper">
                 <img src="img/footer-icons/map-marker.svg" alt="Icon: Map" class="footer__icon">
               </div>
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
-            <li class="footer__item footer__item--mb-2">
+            <li class="footer__item footer__item--contact-indents">
               <div class="footer__icon-wrapper">
                 <img src="img/footer-icons/phone-call.svg" alt="Icon: Phone" class="footer__icon">
               </div>
@@ -689,7 +704,7 @@
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
             </li>
-            <li class="footer__item footer__item--mb-2">
+            <li class="footer__item footer__item--contact-indents">
               <div class="footer__icon-wrapper">
                 <img src="img/footer-icons/mail.svg" alt="Icon: Mail" class="footer__icon">
               </div>
@@ -710,18 +725,20 @@
           </form>
         </div>
         <!-- /.footer-contact-form -->
+        <div class="footer__bottom">
+          <ul class="footer__additional-links">
+            <li class="footer__additional-item"><a href="#" class="footer__additional-link">Disclaimer</a></li>
+            <li class="footer__additional-item"><a href="#" class="footer__additional-link">Conditions of use</a></li>
+            <li class="footer__additional-item"><a href="#" class="footer__additional-link">Cancellation policy</a></li>
+          </ul>
+          <!-- /.footer__additional-links -->
 
-        <ul class="footer__ul footer__additional-links">
-          <li class="footer__additional-item"><a href="#" class="footer__additional-link">Disclaimer</a></li>
-          <li class="footer__additional-item"><a href="#" class="footer__additional-link">Conditions of use</a></li>
-          <li class="footer__additional-item"><a href="#" class="footer__additional-link">Cancellation policy</a></li>
-        </ul>
-        <!-- /.footer__additional-links -->
-
-        <div class="footer__payments">
-          <img src=" img/payments.jpg" alt="" class="footer__payment-icons">
+          <div class="footer__payments">
+            <img src=" img/payments.jpg" alt="" class="footer__payment-icons">
+          </div>
+          <!-- /.footer__payments -->
         </div>
-        <!-- /.footer__payments -->
+        <!-- /.footer__bottom -->
       </div>
       <!-- /.footer-wrapper -->
     </div>
