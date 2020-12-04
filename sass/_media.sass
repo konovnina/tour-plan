@@ -128,6 +128,9 @@
     &__additional-links
       margin: 0
       padding: 0
+  .modal
+    &__dialog
+      padding: 4% 7%
 @media ( max-width: 767px )
   body
     padding-top: 78px
@@ -270,7 +273,13 @@
     padding-bottom: 40px
   .card
     width: 49%
-
+  .modal
+    &__dialog
+      width: 85%
+      padding: 5% 7%
+    &__button
+      flex-basis: 100%
+      margin-bottom: 10px
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -386,6 +395,10 @@
       justify-content: space-between
     &__additional-item:not(:last-child)
       margin-right: 10px
+  .modal
+    &__dialog
+      width: 100%
+      padding: 5% 7%
 @media ( max-width: 320px )
   .container
     max-width: 280px
