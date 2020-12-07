@@ -393,8 +393,10 @@
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
+      <form action="send.php" method="POST" class=" form subscribe newsletter__subscribe">
+        <div class="subscribe__input-group">
+          <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
+        </div>
         <input type="hidden" name="form_name" value="newsletter">
         <button class="subscribe__button">
           Send
@@ -717,14 +719,20 @@
 
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
+          <form action="send.php" method="POST" class="form footer__form">
             <input type="hidden" name="form_name" value="contact">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" maxlength=100
-              minlength=1 required>
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" id="phone-footer"
-              required>
-            <textarea class="message footer__message" placeholder="Message" name="message" minlength=20 maxxlength=1000
-              required></textarea>
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" maxlength=50
+                minlength=2 required>
+            </div>
+            <div class="footer__input-group">
+              <input type="phone" class="input footer__input" placeholder="Phone Number*" name="phone" id="phone-footer"
+                required>
+            </div>
+            <div class="footer__message-group">
+              <textarea class="message footer__message" placeholder="Message" name="message" minlength=20 maxlength=500
+                required></textarea>
+            </div>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -758,14 +766,14 @@
         <img src="img/close.svg" alt="icon: close">
       </a>
       <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
-      <form action="send.php" method="POST" class="modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <input type="hidden" name="form_name" value="modal">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" maxlength=100
-          minlength=1 required>
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" id="phone-modal"
+          minlength=2 required>
+        <input type="phone" class="input modal__input" placeholder="Phone Number*" name="phone" id="phone-modal"
           required>
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
-        <textarea class="message modal__message" placeholder="Message" name="message" minlength=20 maxxlength=1000
+        <textarea class="message modal__message" placeholder="Message" name="message" minlength=20 maxlength=500
           required></textarea>
         <div class="modal__bottom">
           <button class="button modal__button">Send</button>
@@ -780,6 +788,7 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
