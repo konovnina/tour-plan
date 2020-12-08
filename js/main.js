@@ -125,4 +125,7 @@ $(document).ready(function () {
       }
     });
   });
+
+  //Подключение анимации
+  AOS.init();
 }); 
