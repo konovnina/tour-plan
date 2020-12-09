@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=f60d6bab-a059-46e4-b90b-844387538762&lang=en_US"
-    type="text/javascript">
-    </script>
+
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
@@ -186,6 +184,8 @@
           </div>
           <!-- /.booking -->
           <div class="map" id="map-wrapper" data-aos="zoom-in" data-aos-duration="500">
+            <div class="loader loader-default"></div>
+            <div id="map-yandex" class="map__yandex"></div>
           </div>
           <!-- /.map -->
         </div>

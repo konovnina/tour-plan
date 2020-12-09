@@ -177,10 +177,20 @@
     color: $light
     cursor: pointer
 .map
+  position: relative
   width: 347px
   height: 213px
   border-radius: 10px
-  background-color: #000
+  background: url('../img/yandex-before-load-desktop.jpg') #ffffff no-repeat
+  background-position: center center
+  background-size: cover
   overflow: hidden
+  &__yandex
+    position: relative
+    z-index: 7
+    width: 100%
+    height: 100%
+    cursor: pointer
+    background-color: transparent
 .swiper-container
   margin: 0
