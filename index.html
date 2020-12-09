@@ -241,7 +241,7 @@
             <div class="packages-card__book">
               <span class="packages-card__old-price">$ 10,500</span>
               <strong class="packages-card__price">$ 8,500</strong>
-              <button class="packages-card__button">Book Now</button>
+              <button class="packages-card__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <!-- /.packages-card__info -->
@@ -274,7 +274,7 @@
             <div class="packages-card__book">
               <span class="packages-card__old-price">$ 8,500</span>
               <strong class="packages-card__price">$ 3,000</strong>
-              <button class="packages-card__button">Book Now</button>
+              <button class="packages-card__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <!-- /.packages-card__info -->
@@ -309,7 +309,7 @@
             <div class="packages-card__book">
               <span class="packages-card__old-price">$ 10,500</span>
               <strong class="packages-card__price">$ 9,500</strong>
-              <button class="packages-card__button">Book Now</button>
+              <button class="packages-card__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <!-- /.packages-card__info -->
@@ -342,7 +342,7 @@
             <div class="packages-card__book">
               <span class="packages-card__old-price">$ 9,500</span>
               <strong class="packages-card__price">$ 2,500</strong>
-              <button class="packages-card__button">Book Now</button>
+              <button class="packages-card__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <!-- /.packages-card__info -->
@@ -377,7 +377,7 @@
             <div class="packages-card__book">
               <span class="packages-card__old-price">$ 6,500</span>
               <strong class="packages-card__price">$ 3,500</strong>
-              <button class="packages-card__button">Book Now</button>
+              <button class="packages-card__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <!-- /.packages-card__info -->
@@ -598,28 +598,28 @@
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
           <img src="img/activities/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal">Book Now</button>
         </div>
         <!-- /.card -->
 
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
           <img src="img/activities/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal">Book Now</button>
         </div>
         <!-- /.card -->
 
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
           <img src="img/activities/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal">Book Now</button>
         </div>
         <!-- /.card -->
 
         <div class="card activities__card" data-aos="fade-right" data-aos-delay="900">
           <img src="img/activities/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal">Book Now</button>
         </div>
         <!-- /.card -->
 
@@ -633,8 +633,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best tour plan" class="logo footer__logo">
-
+        <a href="index.html" class="logo">
+          <img src="img/vertical-logo.svg" alt="Logo: Best tour plan" class="logo footer__logo">
+        </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -666,13 +667,13 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--social-tablet">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link">
+            <a href="http://facebook.com/" class="footer__link">
               <img src="img/fb.svg" alt="Icon: Facebook">
             </a>
-            <a href="#" class="footer__link">
+            <a href="https://www.youtube.com/" class="footer__link">
               <img src="img/yt.svg" alt="Icon: YouTube">
             </a>
-            <a href="#" class="footer__link">
+            <a href="https://www.instagram.com/" class="footer__link">
               <img src="img/inst.svg" alt="Icon: Instagram">
             </a>
           </div>
@@ -705,15 +706,18 @@
               <div class="footer__icon-wrapper">
                 <img src="img/footer-icons/phone-call.svg" alt="Icon: Phone" class="footer__icon">
               </div>
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              <div class="footer__numbers">
+                Tel (business hours) : <a href="tel:2691500" class="footer__link">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am –
+                20:00 pm) <br>
+                Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 14:00 pm)
+              </div>
             </li>
             <li class="footer__item footer__item--contact-indents">
               <div class="footer__icon-wrapper">
                 <img src="img/footer-icons/mail.svg" alt="Icon: Mail" class="footer__icon">
               </div>
-              cherly.lawson@example.com
+              <a href="mailto:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -728,7 +732,7 @@
                 minlength=2 required>
             </div>
             <div class="footer__input-group">
-              <input type="phone" class="input footer__input" placeholder="Phone Number*" name="phone" id="phone-footer"
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" id="phone-footer"
                 required>
             </div>
             <div class="footer__message-group">
@@ -772,8 +776,7 @@
         <input type="hidden" name="form_name" value="modal">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" maxlength=100
           minlength=2 required>
-        <input type="phone" class="input modal__input" placeholder="Phone Number*" name="phone" id="phone-modal"
-          required>
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" id="phone-modal" required>
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message" minlength=20 maxlength=500
           required></textarea>
