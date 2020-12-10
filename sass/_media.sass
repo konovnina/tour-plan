@@ -17,6 +17,34 @@
     &-card
       &__text
         margin-bottom: 20px
+@media (min-width: 992px)
+  .booking,
+  .search,
+  .packages-card,
+  .subscribe,
+  .card
+    &__button
+      cursor: pointer
+      transition: 0.2s
+      &:hover
+        background-color: darken($primary, 10%)
+  .navbar-menu,
+  .footer
+    &__link
+      cursor: pointer
+      transition: 0.2s
+      &:hover
+        color: $primary
+  .user
+    &__name
+      cursor: pointer
+      transition: 0.2s
+      &:hover
+        color: $primary
+  .social-icon
+    transition: 0.2s
+    &:hover
+      filter: brightness(200%)
 @media ( max-width: 992px )
   .container, .newsletter-wrapper
     max-width: 700px
