@@ -174,7 +174,7 @@
             <!-- /.booking__info -->
             <div class="booking__call-center">
               <span class="booking__heading">Quick Booking</span>
-              <a href="tel:12100" class="booking__number">
+              <a href="tel:12100" class="booking__number booking__link">
                 <img src="img/phone-call.svg" alt="Icon: phone">
                 <span class="booking__num">12100</span>
               </a>
@@ -707,10 +707,12 @@
                 <img src="img/footer-icons/phone-call.svg" alt="Icon: Phone" class="footer__icon">
               </div>
               <div class="footer__numbers">
-                Tel (business hours) : <a href="tel:2691500" class="footer__link">269 1500</a> <br>
-                Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am –
+                Tel (business hours) : <a href="tel:2691500" class="footer__link">269&nbsp;1500</a> <br>
+                Tel (hotline) Monday - Saturday: <a href="tel:52566138"
+                  class="footer__link">52&#8209;56&#8209;61&#8209;38</a> (08:00 am –
                 20:00 pm) <br>
-                Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 14:00 pm)
+                Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52&#8209;56&#8209;61&#8209;38</a>
+                (08:00 am – 14:00 pm)
               </div>
             </li>
             <li class="footer__item footer__item--contact-indents">
@@ -733,7 +735,7 @@
             </div>
             <div class="footer__input-group">
               <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" id="phone-footer"
-                required>
+                maxlength="17" minlength="17" required>
             </div>
             <div class="footer__message-group">
               <textarea class="message footer__message" placeholder="Message" name="message" minlength=20 maxlength=500
@@ -779,7 +781,8 @@
         <input type="hidden" name="form_name" value="modal">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" maxlength=100
           minlength=2 required>
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" id="phone-modal" required>
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" id="phone-modal"
+          maxlength="17" minlength="17" required>
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message" minlength=20 maxlength=500
           required></textarea>

@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
   //Маска номера
-  $("#phone-footer").mask("+7 (999) 999-9999");
-  $("#phone-modal").mask("+7 (999) 999-9999");
+  $("#phone-footer").mask("+7 (000) 000-0000");
+  $("#phone-modal").mask("+7 (000) 000-0000");
 
   //Слайдер в секции Отель
   var hotelSlider = new Swiper('.hotel-slider', {
@@ -161,26 +161,6 @@ $(document).ready(function () {
 
   });
 
-
-
-  // ymaps.ready(init);
-
-  // function init() {
-  //   // Создание карты.
-  //   var myMap = new ymaps.Map("map-wrapper", {
-  //     center: [7.890703, 98.294772],
-  //     zoom: 15,
-  //   }),
-  //     myPlacemark = new ymaps.Placemark([7.890703, 98.294772], {
-  //       balloonContentHeader: "DoubleTree by Hilton Hotel",
-  //       balloonContentBody: "Pa Tong, Kathu, Phuket, Thailand",
-  //       balloonContentFooter: "+66 76 34 08 50",
-  //       hintContent: "Click here to read more"
-  //     });
-  //   myMap.geoObjects.add(myPlacemark);
-
-  // }
-
   //Мобильное меню
   var menuButton = $(".menu-button");
   menuButton.on('click', function () {
@@ -233,7 +213,9 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "This field is required"
+          required: "This field is required",
+          maxlength: "Incorrect phone",
+          minlength: "Incorrect phone"
         },
         message: {
           required: "This field is required",
