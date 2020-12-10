@@ -20,9 +20,12 @@
 @media (min-width: 992px)
   .booking,
   .search,
+  .footer,
   .packages-card,
   .subscribe,
-  .card
+  .card,
+  .modal,
+  .hotel
     &__button
       cursor: pointer
       transition: 0.2s
@@ -107,6 +110,7 @@
         max-width: 580px
         min-height: 299px
       &__button
+        top: 50%
         &--prev
           left: 0
         &--next
@@ -358,6 +362,8 @@
     &-slider
       &__item
         min-height: 438px
+      &__text
+        text-align: left
   .activities
     &__title
       font-size: 18px
@@ -368,7 +374,7 @@
   .footer
     &-wrapper
       grid-template-columns: 100%
-      grid-template-rows: minmax(min-content, 108px) minmax(min-content, 80px) minmax(min-content, 100px) minmax(min-content, 170px) minmax(min-content, 212px) minmax(min-content, 356px) minmax(min-content, 405px) minmax(min-content, 40px)
+      grid-template-rows: minmax(min-content, 108px) minmax(min-content, 80px) minmax(min-content, 100px) minmax(min-content, 170px) minmax(min-content, 212px) minmax(min-content, 356px) minmax(min-content, 405px) minmax(min-content, 45px)
       grid-row-gap: 30px
     &__logo
       grid-row: 1 / 2
@@ -434,6 +440,7 @@
       flex-direction: column
       align-items: flex-start
     &__additional-links
+      margin-top: -5px
       align-items: start
       justify-content: space-between
     &__additional-item:not(:last-child)
